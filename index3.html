@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lack of Exercise Island</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Arita-dotum-Medium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body, h1 { margin: 0px; }
+
+        .bg-section { background-image: url('background.jpg'); }
+
+        .col-1 { width: 100%; height: 100vh; }
+
+        h1 {
+            font-size: 35px;
+            color: black;
+            position: absolute;
+            left: 25%;
+            top: 10%;
+            text-align: center;
+            font-family: 'Arita-dotum-bold';
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 25px;
+            color: black;
+            position: absolute;
+            font-family: 'Arita-dotum-bold';
+            margin: 0px;
+        }
+
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7{
+            width: 20%;
+            height: 25vh;
+            position: absolute;
+            overflow: hidden;
+            filter: grayscale(100%);
+            transition: filter 0.5s;
+        }
+
+        .col-8,
+        .col-9,
+        .col-10,
+        .col-11,
+        .col-12,
+        .col-13 { width: 20%; height: 8vh; position: absolute; }
+
+        .col-2 img,
+        .col-3 img,
+        .col-4 img,
+        .col-5 img,
+        .col-6 img,
+        .col-7 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .col-2:hover,
+        .col-3:hover,
+        .col-4:hover,
+        .col-5:hover,
+        .col-6:hover,
+        .col-7:hover {
+            filter: grayscale(0%);
+        }
+
+        .col-2:active img,
+        .col-3:active img,
+        .col-4:active img,
+        .col-5:active img,
+        .col-6:active img,
+        .col-7:active img {
+            filter: grayscale(0%);
+            pointer-events: none; /* 이미 선택된 이미지는 클릭 이벤트 비활성화 */
+        }
+
+        .col-2.selected,
+        .col-3.selected,
+        .col-4.selected,
+        .col-5.selected,
+        .col-6.selected,
+        .col-7.selected {
+            filter: grayscale(0%);
+        }
+
+        .col-2 { transform: translate(70%, 95%); }
+        .col-3 { transform: translate(190%, 95%); }
+        .col-4 { transform: translate(310%, 95%); }
+        .col-5 { transform: translate(70%, 237%); }
+        .col-6 { transform: translate(190%, 237%); }
+        .col-7 { transform: translate(310%, 237%); }
+        .col-8 { transform: translate(70%, 625%); }
+        .col-9 { transform: translate(190%, 625%); }
+        .col-10 { transform: translate(310%, 625%); }
+        .col-11 { transform: translate(70%, 1070%); }
+        .col-12 { transform: translate(190%, 1070%); }
+        .col-13 { transform: translate(310%, 1070%); }
+    </style>
+</head>
+<body>
+ <audio id="clickSound" preload="auto" src="MP.mp3"></audio>
+<div class="col-1 bg-section">
+    <h1>당신의 요가 트레이닝 코스 6가지를 커스텀하고 플레이 해보세요</h1>
+    <div class="col-2" onclick="toggleGrayscale(this, 'giphy4.gif')">
+        <img src="giphy4.gif" alt="Giphy 1">
+    </div>
+    <div class="col-3" onclick="toggleGrayscale(this, 'giphy5.gif')">
+        <img src="giphy5.gif" alt="Giphy 2">
+    </div>
+    <div class="col-4" onclick="toggleGrayscale(this, 'giphy7.gif')">
+        <img src="giphy7.gif" alt="Giphy 3">
+    </div>
+    <div class="col-8"><p style="font-weight: bold;">코브라 자세 (초급)</p></div>
+    <div class="col-9"><p style="font-weight: bold;">소 자세 (중급)</p></div>
+    <div class="col-10"><p style="font-weight: bold;">삼각 자세1 (초급)</p></div>
+    <div class="col-5" onclick="toggleGrayscale(this, 'giphy9.gif')">
+        <img src="giphy9.gif" alt="Giphy 4">
+    </div>
+    <div class="col-6" onclick="toggleGrayscale(this,'giphy8.gif')">
+        <img src="giphy8.gif" alt="Giphy 5">
+    </div>
+    <div class="col-7" onclick="toggleGrayscale(this,'giphy10.gif')">
+        <img src="giphy10.gif" alt="Giphy 6">
+    </div>
+    <div class="col-11"><p style="font-weight: bold;">크레센트 런지 (중급)</p></div>
+    <div class="col-12"><p style="font-weight: bold;">스트레칭 자세 (초급)</p></div>
+    <div class="col-13"><p style="font-weight: bold;">삼각 자세2 (중급)</p></div>
+
+      <script>
+         function toggleGrayscale(element, imageName, colNumber) {
+            var isSelected = element.classList.toggle("selected");
+            var selectedCols = document.querySelectorAll('.selected');
+
+              clickSound.play(); // 효과음 재생
+
+            if (selectedCols.length > 6) {
+                selectedCols.forEach(function (col) {
+                    if (col !== element) {
+                        col.classList.remove('selected');
+                        col.style.filter = "grayscale(100%)";
+                    }
+                });
+            }
+
+            element.style.filter = isSelected ? "grayscale(0%)" : "grayscale(100%)";
+
+            // col이 3개 선택되면 페이지 전환
+            if (selectedCols.length === 6) {
+                saveSelectedCols(); // 로컬 스토리지에 선택된 col 정보 저장
+                navigateToIndex4(selectedCols); // 페이지 전환
+            } else {
+                saveSelectedCols(); // 로컬 스토리지에 선택된 col 정보 저장
+            }
+        }
+
+        function saveSelectedCols() {
+            var selectedCols = document.querySelectorAll('.selected');
+            var selectedColInfo = Array.from(selectedCols).map(function (col) {
+                return {
+                    colNumber: parseInt(col.classList[0].split('-')[1]),
+                    imageName: col.querySelector('img').alt
+                };
+            });
+
+            // 로컬 스토리지에 선택된 col 정보 저장
+            localStorage.setItem('selectedCols', JSON.stringify(selectedColInfo));
+        }
+
+        function navigateToIndex4(selectedCols) {
+            var selectedColsQueryParam = encodeURIComponent(JSON.stringify(selectedCols));
+            window.location.href = 'index4.html?selectedCols=' + selectedColsQueryParam;
+        }
+    </script>
+</div>
+
+</body>
+</html>

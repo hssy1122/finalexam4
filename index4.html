@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lack of Exercise Island</title>
+    <style type="text/css">
+        /* 스타일 시트 작성 */
+
+        /* 배경 이미지 설정 */
+        .bg-section {
+            background-image: url("un.jpg");
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            position: relative; /* 추가된 부분 */
+            margin: 0px 0px;
+        }
+
+           .content-container {
+        position: absolute;
+        top: 86%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 24px;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .image-container {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 98;
+        width: 100px; /* 이미지의 크기에 따라 조절하세요 */
+        height: 100px; /* 이미지의 크기에 따라 조절하세요 */
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        background-size: cover; /* 배경 이미지 크기 조절 */
+        background-position: center; /* 배경 이미지 위치 조절 */
+    }
+
+
+        /* 텍스트 박스 설정 */
+        .bg-section1, .bg-section2, .bg-section3, .bg-section4, .bg-section5,
+        .bg-section6, .bg-section7, .bg-section8, .bg-section9, .bg-section10,
+        .bg-section11, .bg-section12, .bg-section13, .bg-section14, .bg-section15 {
+            position: absolute;
+            background-size: 100%;
+            z-index: 0;
+            display: none;
+        }
+
+        .bg-section1 {
+            background-image: url("textbox.jpg");
+            width: 100%;
+            height: 120px;
+            top: 80%;
+            display: block;
+            margin: 0px 0px;
+        }
+
+        .bg-section4 {
+            background-image: url("flag.png");
+            width: 140px;
+            height: 140px;
+            left: 89%;
+            top: 2%;
+               display: block;
+            margin: 0px 0px;
+        }
+
+        .bg-section36{
+            background-image: url("right.png");
+            width: 123px;
+            height: 123px;
+            transform: translate(750%, 450%);
+            left: 50%;
+            top: 50%;
+            display: block;
+        }
+
+        .bg-section37{
+            background-image: url("left.png");
+            width: 123px;
+            height: 123px;
+            transform: translate(750%, 350%);
+            left: 50%;
+            top: 50%;
+            display: block;
+        }
+
+        .bg-section38{
+            background-image: url("up.png");
+            width: 123px;
+            height: 123px;
+            transform: translate(750%, 253%);
+            left: 50%;
+            top: 50%;
+            display: block;
+        }
+
+         .bg-section39{
+            background-image: url("down.png");
+            width: 123px;
+            height: 123px;
+            transform: translate(750%, 150%);
+            left: 50%;
+            top: 50%;
+            display: block;
+        }
+
+
+        .bg-section5,
+        .bg-section6,
+        .bg-section7,
+        .bg-section8,
+        .bg-section9,
+        .bg-section10,
+        .bg-section11,
+        .bg-section12,
+        .bg-section13,
+        .bg-section14,
+        .bg-section15,
+        .bg-section16,
+        .bg-section17,
+        .bg-section18,
+        .bg-section19,
+        .bg-section20,
+        .bg-section21,
+        .bg-section22,
+        .bg-section23,
+        .bg-section24,
+        .bg-section25,
+        .bg-section26,
+        .bg-section27,
+        .bg-section28,
+        .bg-section29,
+        .bg-section30,
+        .bg-section31,
+        .bg-section32,
+        .bg-section33,
+        .bg-section34,
+        .bg-section35 {
+            width: 950px;
+            height: 900px;
+            background-size: cover;
+            z-index: -1;
+            position: absolute;
+            top: 0; 
+            left: 0; 
+            display: none; 
+             transform: translate(50%, -8%);
+        }
+
+.bg-section6 {
+    background-image: url("cov1.png");
+    width: 950px;
+    height: 900px;
+     background-size: cover;
+            z-index: -1;
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            display: none; 
+             transform: translate(50%, -8%);
+    display: block;
+}
+
+    </style>
+</head>
+
+<body class="bg-section">
+    <div class="bg-section1"></div>
+    <div class="bg-section2"></div>
+    <div class="bg-section3"></div>
+    <div class="bg-section4"></div>
+    <div class="bg-section5"></div>
+    <div class="bg-section6"></div>
+    <div class="bg-section7"></div>
+    <div class="bg-section8"></div>
+    <div class="bg-section9"></div>
+    <div class="bg-section10"></div>
+    <div class="bg-section11"></div>
+    <div class="bg-section12"></div>
+    <div class="bg-section13"></div>
+    <div class="bg-section14"></div>
+    <div class="bg-section15"></div>
+    <div class="bg-section16"></div>
+    <div class="bg-section17"></div>
+    <div class="bg-section18"></div>
+    <div class="bg-section19"></div>
+    <div class="bg-section20"></div>
+    <div class="bg-section21"></div>
+    <div class="bg-section22"></div>
+    <div class="bg-section23"></div>
+    <div class="bg-section24"></div>
+    <div class="bg-section25"></div>
+    <div class="bg-section26"></div>
+    <div class="bg-section27"></div>
+    <div class="bg-section28"></div>
+    <div class="bg-section29"></div>
+    <div class="bg-section30"></div>
+    <div class="bg-section31"></div>
+    <div class="bg-section32"></div>
+    <div class="bg-section33"></div>
+    <div class="bg-section34"></div>
+    <div class="bg-section35"></div>
+
+      <div id="count-display" style="position: fixed; top: 48px; right:220px; color: black; font-size: 35px; font-weight: bold;"></div>
+
+
+      <div class="content-container" id="content-container"></div>
+<div class="image-container" id="image-container">
+    <div class="image" id="image"></div>
+</div>
+
+     <script>
+ function playSound() {
+            const audio = new Audio('MP.mp3');
+            audio.play();
+        }
+
+        var currentSectionIndex = 5; 
+
+        var images = [
+            'textbox.jpg',
+            'bar_background.png',
+            'island_background.png',
+            'flag.png',
+            'bad.png',
+            'cov1.png',
+            'cov2.png',
+            'cov3.png',
+            'cov4.png',
+            'cov5.png',
+            'cow1.png',
+            'cow2.png',
+            'cow3.png',
+            'cow4.png',
+            'cow5.png',
+            'cre.png',
+            'cre2.png',
+            'cre3.png',
+            'cre4.png',
+            'cre5.png',
+            'str1.png',
+            'str2.png',
+            'str3.png',
+            'str4.png',
+            'str5.png',
+            'str_1.png',
+            'str_2.png',
+            'str_3.png',
+            'str_4.png',
+            'str_5.png',
+            'tri_1.png',
+            'tri_2.png',
+            'tri_3.png',
+            'tir_4.png',
+            'tri_1.png',
+            'right.png',
+            'left.png',
+            'up.png',
+            'down.png',
+        ];
+
+
+        let count = 0;
+
+document.addEventListener('keydown', function (event) {
+    if (
+        (event.key === 'ArrowRight' && (currentSectionIndex === 9 || currentSectionIndex === 13 ||  currentSectionIndex === 16 || currentSectionIndex === 20 || currentSectionIndex === 23 || currentSectionIndex === 29)) ||
+        (event.key === 'ArrowDown' && (currentSectionIndex === 5 || currentSectionIndex === 6 || currentSectionIndex === 11 || currentSectionIndex === 12 || currentSectionIndex === 14 || currentSectionIndex === 17 || currentSectionIndex === 24 || currentSectionIndex === 32)) ||
+        (event.key === 'ArrowUp' && (currentSectionIndex === 7 || currentSectionIndex === 8 || currentSectionIndex === 10 || currentSectionIndex === 15 || currentSectionIndex === 18 || currentSectionIndex === 21 || currentSectionIndex === 22 ||currentSectionIndex === 25 || currentSectionIndex === 26 || currentSectionIndex === 28 || currentSectionIndex === 30 || currentSectionIndex === 33)) ||
+        (event.key === 'ArrowLeft' && (currentSectionIndex === 19 || currentSectionIndex === 27 || currentSectionIndex === 31 || currentSectionIndex === 34 || currentSectionIndex === 35))
+    ) {
+ 
+        document.querySelector('.bg-section' + currentSectionIndex).style.zIndex = '-1';
+        document.querySelector('.bg-section' + currentSectionIndex).style.display = 'none';
+
+        if (event.key === 'ArrowRight') {
+            currentSectionIndex += 1; 
+        } else if (event.key === 'ArrowDown') {
+            currentSectionIndex += 1;
+        } else if (event.key === 'ArrowUp') {
+            currentSectionIndex += 1;
+        } else if (event.key === 'ArrowLeft') {
+            currentSectionIndex += 1; 
+        }
+
+        // 특정 섹션의 배경 이미지를 변경
+        document.querySelector('.bg-section' + currentSectionIndex).style.backgroundImage = 'url("' + images[currentSectionIndex - 1] + '")';
+
+        // 특정 섹션을 보이게 함
+        document.querySelector('.bg-section' + currentSectionIndex).style.zIndex = '0';
+        document.querySelector('.bg-section' + currentSectionIndex).style.display = 'block';
+
+ count = (count + 1) % 31;
+ document.getElementById('count-display').innerText = count + '/30';
+
+
+        // MP3 효과음 재생
+        playSound();
+    } else {
+        // 특정 키 이외의 키가 눌리면 index6.html로 이동
+        window.location.href = 'index6.html';
+    }
+});
+
+// MP3 효과음을 재생하는 함수
+function playSound() {
+    const audio = new Audio('MP.mp3');
+    audio.play();
+}
+
+// 키보드 이벤트에 따라 섹션 이동 및 처리
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowRight') {
+        handleArrowRight();
+    } else if (event.key === 'ArrowDown') {
+        handleArrowDown();
+    } else if (event.key === 'ArrowUp') {
+        handleArrowUp();
+    } else if (event.key === 'ArrowLeft') {
+        handleArrowLeft();
+    } else {
+        // 추가: 특정 키 이외의 키가 눌리면 index6.html로 이동
+        window.location.href = 'index6.html';
+    }
+});
+
+// 특정 섹션에 대한 처리
+function handleArrowRight() {
+    // Your logic for ArrowRight
+    showSectionContent();
+}
+
+function handleArrowDown() {
+    // Your logic for ArrowDown
+    showSectionContent();
+}
+
+function handleArrowUp() {
+    // Your logic for ArrowUp
+    showSectionContent();
+}
+
+function handleArrowLeft() {
+    // Your logic for ArrowLeft
+    showSectionContent();
+}
+
+// 특정 섹션의 내용을 표시하는 함수
+function showSectionContent() {
+    // Define content for each section based on currentSectionIndex
+    // (Your existing logic for showing content goes here)
+}
+
+// 초기 섹션 내용 표시
+showSectionContent();
+
+        // Function to show content for specific sections
+        function showSectionContent() {
+            // Define content for each section based on currentSectionIndex
+            let sectionContent = '';
+            let sectionImage = '';
+            switch (currentSectionIndex) {
+                 case 5:
+                    sectionContent = '시작을 위해 아래 방향키를 누르세요';
+                    sectionImage = 'down.png';
+                    break;
+                case 6:
+                    sectionContent = '하체를 바닥에 붙인다';
+                    sectionImage = 'down.png';
+                    break;
+                case 7:
+                    sectionContent = '푸쉬업 자세로 몸을 일으킨다';
+                    sectionImage = 'up.png';
+                    break;
+                case 8:
+                    sectionContent = '어깨와 팔이 수직이 되게 만든다';
+                    sectionImage = 'up.png';
+                    break;
+                case 9:
+                    sectionContent = '발을 손 사이로 넣어 딛고 일어난다';
+                    sectionImage = 'right.png';
+                    break;
+                case 10:
+                    sectionContent = '양손을 하늘로 든다';
+                    sectionImage = 'up.png';
+                    break;
+                 case 11:
+                    sectionContent = '무릎을 모아 꿇어 앉고 손을 바닥에 딛는다';
+                    sectionImage = 'down.png';
+                    break;
+                case 12:
+                    sectionContent = '허리를 서서히 내린다';
+                    sectionImage = 'down.png';
+                    break;
+                case 13:
+                    sectionContent = '허리를 끝까지 내리고 고개를 들어 정면을 본다';
+                    sectionImage = 'right.png';
+                    break;
+                case 14:
+                    sectionContent = '허리를 다시 서서히 원상복구한다';
+                    sectionImage = 'down.png';
+                    break;
+                case 15:
+                    sectionContent = '허리를 들어올려 둥글게 만다';
+                    sectionImage = 'up.png';
+                    break;
+                case 16:
+                    sectionContent = '발을 손 사이로 넣어 딛고 일어난다';
+                    sectionImage = 'right.png';
+                    break;
+                 case 17:
+                    sectionContent = '뒷다리를 펴고 앞무릎을 굽힌 자세로 일어난다';
+                    sectionImage = 'down.png';
+                    break;
+                case 18:
+                    sectionContent = '손을 하늘 위로 들어 올린다';
+                    sectionImage = 'up.png';
+                    break;
+                 case 19:
+                    sectionContent = '몸을 안쪽으로 튼다';
+                    sectionImage = 'left.png';
+                    break;
+                case 20:
+                    sectionContent = '하늘로 든 손을 아래로 내려 펼친다';
+                    sectionImage = 'right.png';
+                    break;
+                case 21:
+                    sectionContent = '양 손을 하늘 위로 올린다';
+                    sectionImage = 'up.png';
+                    break;
+                case 22:
+                    sectionContent = '심호흡을 한다';
+                    sectionImage = 'up.png';
+                    break;
+                case 23:
+                    sectionContent = '몸을 앞으로 숙인다';
+                    sectionImage = 'right.png';
+                    break;
+                case 24:
+                    sectionContent = '뒷다리를 수직으로 들어올리고 팔은 몸에 붙인다';
+                    sectionImage = 'down.png';
+                    break;
+                 case 25:
+                    sectionContent = '손을 들었던 자세로 원상복구 한다';
+                    sectionImage = 'up.png';
+                    break;
+                case 26:
+                    sectionContent = '양 손을 깍지끼고 하늘로 펴준다';
+                    sectionImage = 'up.png';
+                    break;
+                 case 27:
+                    sectionContent = '몸을 서서히 왼쪽으로 굽힌다';
+                    sectionImage = 'left.png';
+                    break;
+                case 28:
+                    sectionContent = '몸을 원상복구한다';
+                    sectionImage = 'up.png';
+                    break;
+                 case 29:
+                    sectionContent = '몸을 서서히 오른쪽으로 굽힌다';
+                    sectionImage = 'right.png';
+                    break;
+                case 30:
+                    sectionContent = '몸을 원상복구한다';
+                    sectionImage = 'up.png';
+                    break;
+                case 31:
+                    sectionContent = '뒷다리를 펴고 앞다리는 무릎을 굽힌 상태로 손을 펼친다';
+                    sectionImage = 'left.png';
+                    break;
+                case 32:
+                    sectionContent = '몸을 서서히 굽힌 다리 쪽으로 내린다';
+                    sectionImage = 'down.png';
+                    break;
+                case 33:
+                    sectionContent = '손은 펼친 상태를 유지하고 한 쪽 손을 들어올린다';
+                    sectionImage = 'up.png';
+                    break;
+                case 34:
+                    sectionContent = '손을 최대한 무릎을 굽힌 방향으로 당겨본다';
+                    sectionImage = 'left.png';
+                    break;
+                 case 35:
+                    sectionContent = '몸을 처음의 자세로 원상복구한다';
+                    sectionImage = 'left.png';
+                      window.location.href = 'index5.html';
+                    break;
+                // Add cases for other sections as needed
+            }
+
+     const contentContainer = document.getElementById('content-container');
+        const imageContainer = document.getElementById('image-container');
+        const imageElement = document.getElementById('image');
+
+        contentContainer.textContent = sectionContent;
+        imageElement.style.backgroundImage = `url(${sectionImage})`; /* 배경 이미지로 설정 */
+
+        // 이미지가 배경 이미지로 설정되었으므로 src는 사용하지 않습니다.
+    }
+
+    // Example of how to use the function
+    showSectionContent();
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    // 로컬 스토리지에서 'selectedCols' 항목을 가져와서 디코딩하고 배열로 파싱
+    var storedSelectedCols = localStorage.getItem('selectedCols');
+    var selectedCols = storedSelectedCols ? JSON.parse(storedSelectedCols) : [];
+
+    // 객체를 배열로 변환하고 유효한 숫자만 필터링
+    selectedCols = Object.values(selectedCols)
+        .map(function (col) {
+            return col.colNumber; // colNumber 속성만 추출
+        })
+        .filter(function (colNumber) {
+            return typeof colNumber === 'number'; // 숫자만 필터링
+        });
+
+    // 가져온 선택된 col 정보를 이용하여 필요한 작업 수행
+    handleSelectedCols(selectedCols);
+});
+
+function handleSelectedCols(selectedCols) {
+    // 선택된 col 정보를 이용하여 필요한 작업 수행
+    // 예시: 선택된 col 순서를 콘솔에 출력
+    console.log("Selected Cols:", selectedCols);
+
+    // 여기에 선택된 col 정보를 활용하는 코드를 추가하면 됩니다.
+    var selectedColsInfo = [];
+
+    for (var i = 0; i < 3 && i < selectedCols.length; i++) {
+        var colNumber = selectedCols[i];
+        var colElement = document.querySelector('.col-' + colNumber);
+        if (colElement) {
+
+            // 선택된 col에 대한 객체 생성 및 배열에 추가
+            var colInfo = {
+                index: colNumber,
+                name: 'col-' + colNumber
+                // 추가적인 속성이 있다면 여기에 추가할 수 있습니다.
+            };
+            selectedColsInfo.push(colInfo);
+
+            // 선택된 col에 따라 특정 섹션을 보이도록 함
+            showRequiredSection(colNumber);
+        }
+    }
+
+    // 선택된 col에 대한 정보를 활용할 수 있음
+    console.log("Selected Cols Info:", selectedColsInfo);
+}
+
+function showRequiredSection(colNumber) {
+    // 모든 섹션을 감춤
+    var allSections = document.querySelectorAll('.bg-section');
+    allSections.forEach(function (section) {
+        section.style.display = 'none';
+    });
+
+    // 선택된 col에 해당하는 섹션 선택자를 가져와서 보이도록 함
+    var sectionSelector = getSectionSelectorByCol(colNumber);
+
+    console.log('Selected Section Selector:', sectionSelector); // 로그 추가
+
+    // 필요한 섹션만 보이도록 함
+    if (sectionSelector) {
+        var requiredSections = document.querySelectorAll(sectionSelector);
+        requiredSections.forEach(function (section) {
+            section.style.display = 'block';
+        });
+    }
+}
+
+function getSectionSelectorByCol(colNumber) {
+    // colNumber에 따라 해당하는 모든 섹션의 선택자를 반환
+    switch (colNumber) {
+        case 2:
+            return '.bg-section.bg-section5, .bg-section.bg-section6, .bg-section.bg-section7, .bg-section.bg-section8, .bg-section.bg-section9, .bg-section.bg-section10';
+        case 3:
+            return '.bg-section.bg-section11, .bg-section.bg-section12, .bg-section.bg-section13, .bg-section.bg-section14, .bg-section.bg-section15';
+        case 4:
+            return '.bg-section.bg-section16, .bg-section.bg-section17, .bg-section.bg-section18, .bg-section.bg-section19, .bg-section.bg-section20';
+        case 5:
+            return '.bg-section.bg-section21, .bg-section.bg-section22, .bg-section.bg-section23, .bg-section.bg-section24, .bg-section.bg-section25';
+        case 6:
+            return '.bg-section.bg-section26, .bg-section.bg-section27, .bg-section.bg-section28, .bg-section.bg-section29, .bg-section.bg-section30';
+        case 7:
+            return '.bg-section.bg-section31, .bg-section.bg-section32, .bg-section.bg-section33, .bg-section.bg-section34, .bg-section.bg-section35';
+        // 추가적인 case 문 추가
+        default:
+            return null; // 매핑되는 섹션이 없는 경우 null 반환
+    }
+}
+
+
+</script>
+
+</body>
+</html>
